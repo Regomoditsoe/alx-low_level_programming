@@ -4,10 +4,7 @@
 
 /**
  * print_dog - A function that prints a struct dog
- * @d: function to be printed
- *
- * if name is NULL, print Name: (nil)
- * If d is NULL print nothing
+ * @d: function to print
  */
 void print_dog(struct dog *d)
 {
