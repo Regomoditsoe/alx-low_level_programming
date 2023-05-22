@@ -1,5 +1,5 @@
 #ifndef DOG_H
-#define MAIN_H
+#define DOG_H
 
 /**
  * struct dog - type to be defined
