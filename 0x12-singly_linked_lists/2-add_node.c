@@ -17,13 +17,13 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (str)
 	{
-		node->str = strup(str);
+		node->str = strdup(str);
 		if (!node->str)
 		{
 			free(node);
 			return (NULL);
 		}
-		node->len = _strlen(node->str);
+		node->len = strlen(node->str);
 	}
 	node->next = *head;
 	*head = node;
