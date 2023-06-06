@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
-#include <stdio.h>
 
 /**
  * print_listint - A function that prints
