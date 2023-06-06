@@ -3,7 +3,6 @@
 /**
  * free_listint - A function that frees a listint_t list
  * @head: pointer
- * Return: void
  */
 void free_listint(listint_t *head)
 {
@@ -11,7 +10,7 @@ void free_listint(listint_t *head)
 
 	while (head)
 	{
-		list = head;
+		head = list;
 		list = head->next;
 		free(list);
 	}
