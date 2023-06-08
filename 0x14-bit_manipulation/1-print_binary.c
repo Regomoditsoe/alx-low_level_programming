@@ -11,9 +11,6 @@ void print_binary(unsigned long int n)
 	unsigned long int uli;
 	int i, b = 0;
 
-	if (!b)
-		_putchar('0');
-
 	for (i = 63; i >= 0; i--)
 	{
 		uli = n >> i;
@@ -26,4 +23,6 @@ void print_binary(unsigned long int n)
 		else if (b)
 			_putchar('0');
 	}
+	if (!b)
+		_putchar('0');
 }
