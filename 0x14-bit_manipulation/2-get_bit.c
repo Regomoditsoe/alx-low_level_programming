@@ -5,12 +5,12 @@
  * of a bit at a given index
  * @index: index, starting from 0 of the bit
  * you want to get
- * @n:
+ * @n: number of returns
  * Return: valute of the bit index
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index >= sizeof(n) * 8)
+	if (index >= 64)
 		return (-1);
 
 	return (n >> index & 1);
