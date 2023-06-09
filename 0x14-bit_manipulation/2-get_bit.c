@@ -3,19 +3,15 @@
 /**
  * get_bit - A function that returns the value
  * of a bit at a given index
- * @n: unsigned long int
- * @index: index
- * Returns: the value of the bit at index (either 0 or 1),
- * or -1 if an error occurs
+ * @index: index, starting from 0 of the bit
+ * you want to get
+ * @n:
+ * Return: valute of the bit index
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int i;
-
-	if (index > 63)
+	if (index >= sizeof(n) * 8)
 		return (-1);
 
-	i = (n >> index) & 1;
-
-	return (i);
+	return (n >> index & 1);
 }
